@@ -55,5 +55,42 @@ namespace CRUD_UsingADO
                 }
             }
         }
+
+
+        public static void RetrieveStudents()
+        {
+            //string cs = ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString;
+
+            string cs = "Data Source = HP-ELITEBOOK\\SQLEXPRESS;initial Catalog= ADODB;Integrated Security = true;";
+
+
+            using (SqlConnection connection = new SqlConnection(cs))
+            {
+                try
+                {
+                    string query = "SELECT * FROM Student";
+                    SqlCommand sqlCommand = new SqlCommand(query, connection);
+
+                    connection.Open();
+                    SqlDataReader dr = sqlCommand.ExecuteReader();
+
+                    Console.WriteLine($"| {"ID",-5} | {"Name",-15} | {"Gender",-8} | {"Age",-5} |");
+                    Console.WriteLine("-------------------------------------------");
+
+                    while (dr.Read())
+                    {
+                        Console.WriteLine($"| {dr["StudentID"],-5} | {dr["Name"],-15} | {dr["Gender"],-8} | {dr["Age"],-5} |");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error: " + ex.Message);
+                }
+            }
+        }
+
+
+
+
     }
 }

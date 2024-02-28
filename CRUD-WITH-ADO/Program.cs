@@ -21,7 +21,7 @@ public class Program
                     InsertStudent();
                     break;
                 case 2:
-                    // RetrieveStudents();
+                    RetrieveStudents();
                     break;
                 case 3:
                     // UpdateStudent();
@@ -54,6 +54,14 @@ public class Program
         Console.WriteLine();
 
     }
+
+    static void RetrieveStudents()
+    {
+        Console.WriteLine("List of all students:");
+        Student.RetrieveStudents();
+        Console.WriteLine();
+    }
+
 
 
 

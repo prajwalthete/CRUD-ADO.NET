@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CRUD-WITH-ADO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5332eb10f2a5019849e5c24b8fe0aaee36e380c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d6d35d4006df3993a0997af8e74567a0f9b6eb8")]
 [assembly: System.Reflection.AssemblyProductAttribute("CRUD-WITH-ADO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CRUD-WITH-ADO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
