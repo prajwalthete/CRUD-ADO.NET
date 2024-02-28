@@ -128,6 +128,40 @@ namespace CRUD_UsingADO
         }
 
 
+        public static void DeleteStudent(int studentID)
+        {
+            // string cs = ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString;
+
+            string cs = "Data Source = HP-ELITEBOOK\\SQLEXPRESS;initial Catalog= ADODB;Integrated Security = true;";
+
+            using (SqlConnection connection = new SqlConnection(cs))
+            {
+                try
+                {
+                    string query = "DELETE FROM Student WHERE StudentID = @StudentID";
+                    SqlCommand sqlCommand = new SqlCommand(query, connection);
+                    sqlCommand.Parameters.AddWithValue("@StudentID", studentID);
+
+                    connection.Open();
+                    int rowsAffected = sqlCommand.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        Console.WriteLine("Student record deleted successfully.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("No rows affected.");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error: " + ex.Message);
+                }
+            }
+        }
+
+
 
     }
 }

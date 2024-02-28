@@ -27,7 +27,7 @@ public class Program
                     UpdateStudent();
                     break;
                 case 4:
-                    // DeleteStudent();
+                    DeleteStudent();
                     break;
                 case 5:
                     Environment.Exit(0);
@@ -83,9 +83,14 @@ public class Program
     }
 
 
+    static void DeleteStudent()
+    {
+        Console.WriteLine("Enter the StudentID of the student to delete:");
+        int studentIDToDelete = int.Parse(Console.ReadLine());
+        Student.DeleteStudent(studentIDToDelete);
+        Console.WriteLine();
 
-
-
+    }
 
 }
 
