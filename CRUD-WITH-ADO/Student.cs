@@ -91,6 +91,43 @@ namespace CRUD_UsingADO
 
 
 
+        public static void UpdateStudent(Student student)
+        {
+            // string cs = ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString;
+
+            string cs = "Data Source = HP-ELITEBOOK\\SQLEXPRESS;initial Catalog= ADODB;Integrated Security = true;";
+
+            using (SqlConnection connection = new SqlConnection(cs))
+            {
+                try
+                {
+                    string query = "UPDATE Student SET Name = @Name, Gender = @Gender, Age = @Age WHERE StudentID = @StudentID";
+                    SqlCommand sqlCommand = new SqlCommand(query, connection);
+                    sqlCommand.Parameters.AddWithValue("@StudentID", student.StudentID);
+                    sqlCommand.Parameters.AddWithValue("@Name", student.Name);
+                    sqlCommand.Parameters.AddWithValue("@Gender", student.Gender);
+                    sqlCommand.Parameters.AddWithValue("@Age", student.Age);
+
+                    connection.Open();
+                    int rowsAffected = sqlCommand.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
+                    {
+                        Console.WriteLine("Student record updated successfully.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("No rows affected.");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Error: " + ex.Message);
+                }
+            }
+        }
+
+
 
     }
 }

@@ -24,7 +24,7 @@ public class Program
                     RetrieveStudents();
                     break;
                 case 3:
-                    // UpdateStudent();
+                    UpdateStudent();
                     break;
                 case 4:
                     // DeleteStudent();
@@ -61,6 +61,27 @@ public class Program
         Student.RetrieveStudents();
         Console.WriteLine();
     }
+
+    static void UpdateStudent()
+    {
+        Console.WriteLine("Enter the StudentID of the student to update:");
+        int studentIDToUpdate = int.Parse(Console.ReadLine());
+        Student studentToUpdate = new Student();
+        studentToUpdate.StudentID = studentIDToUpdate;
+
+        Console.WriteLine("Enter updated details:");
+        Console.Write("Name: ");
+        studentToUpdate.Name = Console.ReadLine();
+        Console.Write("Gender: ");
+        studentToUpdate.Gender = Console.ReadLine();
+        Console.Write("Age: ");
+        studentToUpdate.Age = int.Parse(Console.ReadLine());
+
+        Student.UpdateStudent(studentToUpdate);
+
+        Console.WriteLine();
+    }
+
 
 
 
