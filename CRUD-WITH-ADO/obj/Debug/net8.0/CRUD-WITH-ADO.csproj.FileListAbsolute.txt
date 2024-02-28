@@ -12,3 +12,12 @@ E:\.NET WORKSPACE-1\Websites1\2023\2024\ADO\CRUD-WITH-ADO\obj\Debug\net8.0\refin
 E:\.NET WORKSPACE-1\Websites1\2023\2024\ADO\CRUD-WITH-ADO\obj\Debug\net8.0\CRUD-WITH-ADO.pdb
 E:\.NET WORKSPACE-1\Websites1\2023\2024\ADO\CRUD-WITH-ADO\obj\Debug\net8.0\CRUD-WITH-ADO.genruntimeconfig.cache
 E:\.NET WORKSPACE-1\Websites1\2023\2024\ADO\CRUD-WITH-ADO\obj\Debug\net8.0\ref\CRUD-WITH-ADO.dll
+E:\.NET WORKSPACE-1\Websites1\2023\2024\ADO\CRUD-WITH-ADO\obj\Debug\net8.0\CRUD-WITH-ADO.csproj.AssemblyReference.cache
+E:\.NET WORKSPACE-1\Websites1\2023\2024\ADO\CRUD-WITH-ADO\obj\Debug\net8.0\CRUD-WITH-ADO.sourcelink.json
+E:\.NET WORKSPACE-1\Websites1\2023\2024\ADO\CRUD-WITH-ADO\bin\Debug\net8.0\System.Data.SqlClient.dll
+E:\.NET WORKSPACE-1\Websites1\2023\2024\ADO\CRUD-WITH-ADO\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+E:\.NET WORKSPACE-1\Websites1\2023\2024\ADO\CRUD-WITH-ADO\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+E:\.NET WORKSPACE-1\Websites1\2023\2024\ADO\CRUD-WITH-ADO\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+E:\.NET WORKSPACE-1\Websites1\2023\2024\ADO\CRUD-WITH-ADO\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\.NET WORKSPACE-1\Websites1\2023\2024\ADO\CRUD-WITH-ADO\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\.NET WORKSPACE-1\Websites1\2023\2024\ADO\CRUD-WITH-ADO\obj\Debug\net8.0\CRUD-WIT.4665F5B7.Up2Date
